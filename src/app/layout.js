@@ -1,13 +1,15 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, PT_Serif, DM_Sans} from "next/font/google";
 import "./globals.css";
+import { HeadingDua, HeadingSatoe, HeadingTiga, Navbar } from "@/components";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+export const ptSerif = PT_Serif({
+  variable: "--font-pt-serif",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+export const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
@@ -18,10 +20,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="en" className={`${ptSerif.variable} ${dmSans.variable}`}>
+      <body className={`antialiased`}>
+        <Navbar/>
         {children}
       </body>
     </html>
