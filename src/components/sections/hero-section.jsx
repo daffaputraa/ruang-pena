@@ -1,8 +1,9 @@
 'use client'
 import React, { useEffect } from 'react'
-import { BodyText, Button, ClickAbleBadge, HeadingDua } from '..'
+import { BodyText, Button, CardOrnamen, ClickAbleBadge, HeadingDua } from '..'
 import { socialMediaBadge } from '@/constant/mockdata'
 import { motion } from 'motion/react'
+import { Link } from 'react-scroll';
 
 const HeroSection = () => {
 
@@ -12,6 +13,7 @@ const HeroSection = () => {
     
     return (
         <section className="hero-section py-[180px] flex flex-col items-center gap-9">
+            <CardOrnamen/>
             <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -39,7 +41,7 @@ const HeroSection = () => {
                 </HeadingDua>
 
                 <motion.div
-                    className="social-media-badge flex gap-4"
+                    className="social-media-badge flex gap-2 md:gap-4 flex-wrap justify-center"
                     initial={{ opacity: 0, y: 40 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.6, ease: [0, 0.71, 0.2, 1.01], }}
@@ -57,7 +59,7 @@ const HeroSection = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.9, ease: [0, 0.71, 0.2, 1.01], }}
             >
-                <Button>Halo semuanya</Button>
+            <Button to='blog'>Baca sekarang</Button>
             </motion.div>
         </section>
     )

@@ -1,4 +1,4 @@
-import { HeroSection } from "@/components";
+import { BlogSection, HeroSection } from "@/components";
 
 export default function Home() {
   return (
@@ -6,7 +6,7 @@ export default function Home() {
       <div className="main-container">
         <div className="top-content">
           <HeroSection/>
-          <h1>haloo</h1>
+          <BlogSection/>
         </div>
       </div>
     </>

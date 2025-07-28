@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="fixed md:top-4 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 border border-stone-300 bg-white max-w-[1200px] mx-auto md:rounded-2xl">
+      <nav className="fixed md:top-4 left-0 right-0 z-50 flex max-w-full items-center justify-between px-6 py-4 border border-stone-300 bg-white lg:max-w-[1200px] mx-auto md:rounded-2xl">
         {/* Logo */}
         <div className="flex items-center gap-3">
           <Image src={ruang_pena} alt="Logo" className="w-[162px]" />

@@ -32,3 +32,13 @@ export const socialMediaBadge = [
         icon : instagram_icon
     },
 ]
+
+
+export const categories = [
+    { id: 1, name: 'Semua' },
+    { id: 2, name: '#30HariMenulis' },
+    { id: 3, name: '#CeritaVokasi' },
+    { id: 4, name: '#CeritaKampus' },
+    { id: 5, name: 'Review Buku' },
+    { id: 6, name: 'Rancangan' },
+]
